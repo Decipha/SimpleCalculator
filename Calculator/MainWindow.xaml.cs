@@ -26,6 +26,8 @@ namespace Calculator
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (Result.Text.Contains("="))
+                Result.Text = "";
             Button b = (Button)sender;
             Result.Text += b.Content.ToString();
         }
@@ -35,7 +37,7 @@ namespace Calculator
             {
                 calculate();
             }
-            catch (Exception exc)
+            catch (Exception ex)
             {
                 Result.Text = "Error!";
             }
