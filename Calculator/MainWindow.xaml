@@ -35,7 +35,9 @@
         </Button>
         <Button Content="0" HorizontalAlignment="Left" Margin="11,267,0,0" VerticalAlignment="Top" Width="74" Height="44" FontSize="18" BorderThickness="2" Click="Button_Click">
         </Button>
-        <Button Content="=" HorizontalAlignment="Left" Margin="93,267,0,0" VerticalAlignment="Top" Width="237" Height="44" FontSize="18" BorderThickness="2" Click="Equal_click">
+        <Button Content="=" HorizontalAlignment="Left" Margin="93,267,0,0" VerticalAlignment="Top" Width="155" Height="44" FontSize="18" BorderThickness="2" Click="Equal_click">
+        </Button>
+        <Button Content="/" HorizontalAlignment="Left" Margin="256,267,0,0" VerticalAlignment="Top" Width="74" Height="43" FontSize="18" BorderThickness="2" Click="Button_Click">
         </Button>
     </Grid>
 </Window>

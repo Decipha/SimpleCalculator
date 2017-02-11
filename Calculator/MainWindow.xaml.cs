@@ -30,6 +30,7 @@ namespace Calculator
                 Result.Text = "";
             Button b = (Button)sender;
             Result.Text += b.Content.ToString();
+
         }
         private void Equal_click(object sender, RoutedEventArgs e)
         {
