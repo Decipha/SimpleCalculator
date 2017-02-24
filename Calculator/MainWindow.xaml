@@ -39,5 +39,8 @@
         </Button>
         <Button Content="/" HorizontalAlignment="Left" Margin="256,267,0,0" VerticalAlignment="Top" Width="74" Height="43" FontSize="18" BorderThickness="2" Click="Button_Click">
         </Button>
+        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Height="35" Margin="11,72,0,0" VerticalAlignment="Top" Width="104" Click="Clear_Click"/>
+        <Button x:Name="BackSpace" Content="&lt;---" HorizontalAlignment="Left" Height="35" Margin="120,72,0,0" VerticalAlignment="Top" Width="110" Click="BackSpace_Click"/>
+        <Button x:Name="Percentage" Content="%" HorizontalAlignment="Left" Height="35" Margin="256,72,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
     </Grid>
 </Window>
