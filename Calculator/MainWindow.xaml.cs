@@ -64,6 +64,10 @@ namespace Calculator
             {
                 iOp = Result.Text.IndexOf("/");
             }
+            else if (Result.Text.Contains("%"))
+            {
+                iOp = Result.Text.IndexOf("%");
+            }
             else
             {
                 //error
@@ -85,11 +89,29 @@ namespace Calculator
             {
                 Result.Text += "=" + (op1 * op2);
             }
-            else
+            else if (op == "/")
             {
                 Result.Text += "=" + (op1 / op2);
             }
+            else if (op == "%")
+            {
+                Result.Text += "=" + ((op1 * op2)/100);
+            }
         }
 
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            Result.Text = "";
+        }
+
+        private void BackSpace_Click(object sender, RoutedEventArgs e)
+        {
+            if (Result.Text.Length > 0)
+            {
+                Result.Text = Result.Text.Substring(0, Result.Text.Length - 1);
+            }
+        }
+
+        
     }
 }
